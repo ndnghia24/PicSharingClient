@@ -1,4 +1,3 @@
-// src/app/posts/[postId]/page.jsx
 import PostModal from '@/components/PostModal';
 import { useEffect, useState } from 'react';
 import axios from 'axios';

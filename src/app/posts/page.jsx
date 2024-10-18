@@ -1,4 +1,5 @@
-// src/app/posts/page.jsx
+"use client";
+
 import PostCard from '@/components/PostCard';
 import PostModal from '@/components/PostModal';
 import { useEffect, useState } from 'react';
