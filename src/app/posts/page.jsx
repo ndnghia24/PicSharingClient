@@ -1,9 +1,9 @@
 "use client";
 
-import PostCard from '@/components/PostCard';
-import PostModal from '@/components/PostModal';
+import PostCard from '../components/PostCard';
+import PostModal from '../components/PostModal';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from '../../ultis/axios';
 
 const PostsPage = () => {
   const [posts, setPosts] = useState([]);
@@ -12,7 +12,7 @@ const PostsPage = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get('http://localhost:3000/posts');
+      const response = await axios.get('/posts');
       setPosts(response.data);
     };
 
