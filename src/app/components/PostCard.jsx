@@ -15,7 +15,7 @@ const PostCard = ({ post, onClick }) => {
         <img
           alt={post.description}
           src={post.imageUrls[0]}
-          style={{ height: "100%", objectFit: "cover", borderRadius: "5px", }}
+          style={{ height: "100%", width: "100%", borderRadius: "5px", }}
         />
       ) : null}
       
